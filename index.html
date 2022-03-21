@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB/HEX generator</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+
+<body>
+    <div class="container" id="main-container">
+        <h1 id="title">RGB/HEX generator</h1>
+        <div class="colors" id="colors">
+            <input type="range" id="red" value="255" min="0" max="255">
+            <input type="range" id="green" value="255" min="0" max="255">
+            <input type="range" id="blue" value="255" min="0" max="255">
+        </div>
+
+        <div class="responses">
+            <h3>Result:</h3>
+            <div class="rgb">
+                <label>RGB</label>
+                <input type="text" onkeyup="changeRgbRange()" value="rgb(255,255,255)" id="rgb-response">
+            </div>
+            <div class="hex">
+                <label>HEX</label>
+                <input type="text" onkeyup="changeHexRange()" value="#ffffff" id="hex-response">
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/color.js"></script>
+</body>
+
+</html>

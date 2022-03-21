@@ -1,0 +1,105 @@
+body {
+  font-family: 'Courier New', Courier, monospace; }
+
+.colors input {
+  height: 10px;
+  width: 80%;
+  border-radius: 50px;
+  outline: none;
+  -webkit-appearance: none;
+  margin-top: 20px; }
+
+.colors input::-webkit-slider-runnable-track {
+  height: 10px; }
+
+#red::-webkit-slider-thumb {
+  height: 26px;
+  width: 26px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #000, red);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px; }
+
+#red::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #000, red); }
+
+#green::-webkit-slider-thumb {
+  height: 26px;
+  width: 26px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #000, green);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px; }
+
+#green::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #000, green); }
+
+#blue::-webkit-slider-thumb {
+  height: 26px;
+  width: 26px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #000, blue);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px; }
+
+#blue::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #000, blue); }
+
+.title-bar {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid gray; }
+  .title-bar .window-title {
+    width: 50%; }
+  .title-bar .window-controls {
+    width: 50%;
+    text-align: end; }
+    .title-bar .window-controls button {
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid #00000a;
+      color: none;
+      width: 25px;
+      height: 25px;
+      margin: 0; }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  border: 1px solid black;
+  padding-bottom: 20px;
+  width: 300px; }
+  .container h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid black; }
+  .container .colors {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black; }
+  .container .responses {
+    text-align: center; }
+    .container .responses label {
+      font-weight: 600;
+      font-size: 20px; }
+    .container .responses input {
+      border: 0;
+      font-size: 18px;
+      padding: 10px;
+      outline: none;
+      width: 70%;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid #1b1b1b;
+      border-left: 1px solid #333333;
+      border-bottom-left-radius: 30px;
+      letter-spacing: 2px; }
+    .container .responses .hex {
+      margin-top: 10px; }

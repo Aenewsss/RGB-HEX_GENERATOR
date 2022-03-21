@@ -1,0 +1,120 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.colors input{
+    height: 10px;
+    width: 80%;
+    border-radius: 50px;
+    outline: none;
+    -webkit-appearance: none;
+    margin-top: 20px;
+}
+
+
+.colors input::-webkit-slider-runnable-track{
+    height: 10px;
+}
+#red::-webkit-slider-thumb{
+    height: 26px;
+    width: 26px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #000, red);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+#red::-webkit-slider-runnable-track{
+    background: linear-gradient(90deg, #000, red);
+}
+#green::-webkit-slider-thumb{
+    height: 26px;
+    width: 26px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #000, green);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+#green::-webkit-slider-runnable-track{
+    background: linear-gradient(90deg, #000, green);
+}
+#blue::-webkit-slider-thumb{
+    height: 26px;
+    width: 26px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #000, blue);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+#blue::-webkit-slider-runnable-track{
+    background: linear-gradient(90deg, #000, blue);
+}
+
+.title-bar{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid gray;
+    .window-title{
+        width: 50%;
+    }
+    .window-controls{
+        width: 50%;
+        text-align: end;
+        button{
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid #00000a;
+            color: none;
+            width: 25px;
+            height: 25px;
+            margin: 0;
+        }
+    }
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 1px solid black;
+    padding-bottom: 20px;
+    width: 300px;
+    h1{
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        font-size: 50px;
+        border-bottom: 1px solid black;
+    }
+    .colors{
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    .responses{
+        text-align: center;
+        label{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        input{
+            border: 0;
+            font-size: 18px;
+            padding: 10px;
+            outline: none;
+            width: 70%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgb(27, 27, 27);
+            border-left: 1px solid rgb(51, 51, 51);
+            border-bottom-left-radius: 30px;
+            letter-spacing: 2px;
+        }
+        .hex{
+            margin-top: 10px;
+        }
+    }
+}
